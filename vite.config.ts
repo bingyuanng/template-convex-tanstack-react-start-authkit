@@ -20,4 +20,10 @@ export default defineConfig({
     tanstackStart(),
     viteReact(),
   ],
+  optimizeDeps: {
+    include: ['@workos/authkit-tanstack-react-start'],
+  },
+  ssr: {
+    noExternal: ['@workos/authkit-tanstack-react-start'],
+  },
 });
